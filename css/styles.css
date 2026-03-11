@@ -10,6 +10,12 @@
     padding: 0;
 }
 
+body {
+    margin: 20px 50px 20px 50px;
+    /* top, right, bottom, left */
+}
+
+
 h2, h3, p, li {
     font-family: 'Times New Roman', Times, serif
 }
@@ -32,32 +38,40 @@ h2, h3, p, li {
     
 }
 
+
+/* Adding media queries for responsive design */
+
+@media (max-width: 800px) {
+    #container {
+        grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Assigning Grid Areas */
-header {
-    grid-area: header;
-    
+header { grid-area: header; 
 }
-
-
 aside {
-    grid-area: aside;
-   
+    grid-area: aside;   
 }
-
 main {
-    grid-area: main;
-   
+    grid-area: main;  
+}
+footer {
+    grid-area: footer; 
 }
 
-footer {
-    grid-area: footer;
-   
-}
+
 
 /* Heading Styles ----------------------------------------------------*/
 
 header p {
     text-transform: uppercase;
+    font-size: 1.25vw;
 }
 
 header h1 {
@@ -66,10 +80,10 @@ header h1 {
     font-family: 'neuton', serif;
     text-align: center;
     font-weight: 200;
-    font-size: 8rem;
+    font-size: 8vw;
     letter-spacing: 2px;
     padding-bottom: 20px;
-    line-height: 0.1;
+    
     /* Due to large font size, must lower line height to remove extra space */
 }
 
@@ -78,8 +92,7 @@ header h1 {
  figure img {
     width: 100%;
     height: auto;
-    display: block;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     
 }
 
@@ -87,8 +100,6 @@ figure {
     position: relative;
     
 }
-
-
 
 figcaption {
     position: absolute;
@@ -137,7 +148,7 @@ article ol {
 /* Main styling--------------------------------------------- */
 
 main {
-    padding-top: 20px;
+    
     padding-left: 20px;
 }
 
@@ -173,7 +184,7 @@ main section:nth-child(3) h2 {
 section h3, p {
     display: inline;
     /* Make h3 and p elements display inline */
-    font-size: 16px;
+    font-size: 1.2rem;
 }
 section h3 {
     text-transform: uppercase;
@@ -204,5 +215,20 @@ section ol {
     line-height: 1.1
 
 }
+
+/* Footer Styles ---------------------------------------------------- */
+
+footer p {
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+    padding: 20px;
+}
+
+footer em {
+    color: orangered;
+}
+
+
 
 
