@@ -1,4 +1,9 @@
 
+
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -126,24 +131,32 @@ article ol {
     margin-top: 5px;
     padding-left: 25px;
     font-size: 14px;
+    
 }
 
 /* Main styling--------------------------------------------- */
+
+main {
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
 main h2 {
     text-transform: lowercase;
     font-family: "neuton", serif;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 3rem;
     border-top: 10px solid black;
-    line-height: 0.75;
+    line-height: 0.90;
+  
     
     
 }
 
 /* changing border color for each section */
-main section:nth-child(1) h2 {
+main section:nth-child(1) h2, h3 {
     border-color: rgb(63, 177, 67);
+   
 }
 
 main section:nth-child(2) h2 {
@@ -153,3 +166,43 @@ main section:nth-child(2) h2 {
 main section:nth-child(3) h2 {
     border-color: rgb(3, 163, 216);
 }
+
+
+
+
+section h3, p {
+    display: inline;
+    /* Make h3 and p elements display inline */
+    font-size: 16px;
+}
+section h3 {
+    text-transform: uppercase;
+    
+}
+
+
+
+
+/* changing h3 color for each section */
+
+ main section:nth-child(1) h3 {
+    color: rgb(63, 177, 67);
+   
+}
+main section:nth-child(2) h3 {
+    color: rgb(213, 73, 134);
+}
+main section:nth-child(3) h3 {
+    color: rgb(3, 163, 216);
+} 
+
+section ol {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-size: 25px;
+    line-height: 1.1
+
+}
+
+
