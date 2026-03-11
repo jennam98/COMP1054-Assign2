@@ -101,9 +101,55 @@ figcaption p em {
 
 article {
     border: 2px solid orangered;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 20px 10px 20px;
     margin: 50px 20px 20px 20px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-    
+    line-height: 1.25;
 
+
+}
+
+article h2 {
+   text-transform: lowercase;
+   font-family: "neuton", serif;
+   font-weight: 400;
+   padding-bottom: 5px;
+   font-size: 2rem;
+   
+}
+
+article p em {
+    text-transform: uppercase;
+}
+
+article ol {
+    margin-top: 5px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+/* Main styling--------------------------------------------- */
+
+main h2 {
+    text-transform: lowercase;
+    font-family: "neuton", serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    border-top: 10px solid black;
+    line-height: 0.75;
+    
+    
+}
+
+/* changing border color for each section */
+main section:nth-child(1) h2 {
+    border-color: rgb(63, 177, 67);
+}
+
+main section:nth-child(2) h2 {
+    border-color: rgb(213, 73, 134);
+}
+
+main section:nth-child(3) h2 {
+    border-color: rgb(3, 163, 216);
 }
